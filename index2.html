@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yehonatan yehezkel CV</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 21px;
+    }
+
+    .main{
+      display: flex;
+      justify-content: flex-start ;
+      padding-block-start: 6rem;
+      padding-block-end: 6rem;
+      /* padding-inline-start: 8rem;
+      padding-inline-end: 8rem; */
+
+    }
+
+    .skills-main {
+      display: flex;
+      justify-content: space-around;
+     flex-direction: column;
+
+      letter-spacing: 0.03rem;
+      max-width: 880px; 
+     
+      
+    }
+
+    .skill-container {
+      margin-block-start :1.5rem;
+      display: flex;
+      flex-direction: row;
+      
+      /* border: 1px black solid; */
+      
+    }
+
+    .skill-title {
+      flex: 1;
+      /* border: 1px red solid; */
+      flex-wrap: nowrap;
+      align-self: flex-start;
+      font-weight: 600;
+      font-style: italic;
+      /* margin-block-end: 0.3rem;
+      margin-block-start: 0.3rem; */
+
+    }
+
+    .skill-description {
+      flex: 3;
+      /* border: 1px green solid; */
+      line-height: 2rem;
+
+    }
+
+    .personal {
+      padding-inline-start: 1rem;
+      padding-inline-end: 0.5rem;
+      /* background-color: rgb(65, 106, 196); */
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-size:1rem;
+      min-width: 15rem;
+      max-width: 6rem;
+      margin-inline-start: 10rem;
+      margin-block-start:6rem;
+    
+    }
+    .personal-title , .personal-additional-details{
+      font-weight: 600;
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-block-start: 2rem;
+    }
+
+    .personal-additional-details{
+     
+    }
+    .personal-data {
+      margin-block-start: 1rem;
+    }
+    .personal-data >span{
+     font-weight: 600;
+     font-style: italic;
+    }
+
+    
+
+    @media (max-width: 600px) {
+      .main{
+     
+      padding-block-start: 2rem;
+      padding-block-end: 2rem;
+      padding-inline-start: 0rem;
+      padding-inline-end: 0rem;
+      flex-direction: column;
+
+    }
+      .skills-main {
+        padding-inline-start: 0.1rem;
+        padding-inline-end: 0.1rem;
+        padding-block-start: 0.3rem;
+      
+      }
+      .skill-container{
+        flex-direction: column;
+      }
+      .personal{
+        min-width: 15rem;
+    margin-inline-start: 0rem;
+    margin-block-start:0rem;
+    max-width: none;
+       
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+
+    <section class="personal">
+
+      <div class="personal-title">Personal Details</div>
+      <div class="personal-data" > <span> Name:</span> Yehonatan Yehezkel</div>
+      <div class="personal-data" > <span>  Phone:</span> 055-6615410</div>
+      <div class="personal-data" ><span> Mail:</span> yoni333@gmail.com</div>
+      <div class="personal-data" ><span> Address:</span> Jerusalem</div>
+      
+      <div class="personal-title personal-additional-details">Additional Details</div>
+      <div class="personal-data" ><span> GIthub:</span> <a href=" https://github.com/yoni333?tab=repositories ">My repositories</a></div>
+      <div class="personal-data" ><span> linkedin:</span><a href=" https://www.linkedin.com/in/yehonatan-yehezkel-0a498253/">My Profile</a>  </div>
+      <div class="personal-data" ><span> youTube:</span> <a href=" https://www.youtube.com/channel/UChW3G_BAbP4zln_enWUPRkw/playlists">Programming Video that i created </a></div>
+      <div class="personal-title personal-additional-details">Languages</div>
+      <div class="personal-data"> <span> Hebrew:</span>  Native language</div>
+      <div class="personal-data"> <span> English:</span> Intermediate</div>
+
+    </section>
+  <section class="skills-main">
+
+    <div class="skill-container">
+      <div class="skill-title">In General</div>
+      <div class="skill-description"> I know to create complex systems end to end as <strong> Full-stack Web Developer  </strong> as single
+        developer and in within a team. 
+        with different Clint Side FrameWork specially with nodeJS & Angular & React </div>
+    </div>
+
+    <div class="skill-container">
+      <div class="skill-title">FRONT-END: </div>
+      <div class="skill-description">In the last 3.5 years i worked mots of the time with <strong>
+          Angular 2 + (and TypeScript)  , React </strong> (small experience with VUE , Polymer) 
+        I am well familiar with Store Pattern and State Management with NGRX and REDUX , RxJs ,ES06 new features
+
+
+      </div>
+    </div>
+    <div class="skill-container">
+      <div class="skill-title">CSS frameworks:</div>
+      <div class="skill-description"> Angular Material ,  MAterial UI , PrimeNG , Bootstrap
+
+      </div>
+    </div>
+    <div class="skill-container">
+      <div class="skill-title">Server side:</div>
+      <div class="skill-description"> <strong> I Worked with Node.js and PHP in production mode.
+        I have good experience with creating REST API (with Express) </strong>
+        using tools like Swagger & Postman ,
+        and in server side process like : workings with files , connect and use AWS services , Image and PDF
+        Manipulation Using LINUX & BASH
+        before 2017 my i worked with PHP and APACHE SERVER
+
+      </div>
+    </div>
+    <div class="skill-container">
+      <div class="skill-title">Database Experience: </div> 
+      <div class="skill-description"> Mysql (MariaDB version) , Mongo ( with mongoose) , FireStore
+        - include DB modeling
+      </div>
+    </div>
+   
+    <div class="skill-container">
+      <div class="skill-title">Architecture:</div> 
+      <div class="skill-description"> well Familiar with Clean Code & Domain Driven Design (backend &
+        FED) , also With MVC , MVP.
+        <div>
+          i love to create correct code with OOP or functional programing .
+          
+        </div>
+        <div>
+          In this days i translate to hebrew a book about Functional programing in javaScript and Learning Docker
+        </div>
+     
+      </div>
+    </div>
+
+
+
+  </section>
+
+  
+
+</div>
+
+<section>
+  <h3>Experience</h3>
+  <hr>
+  <div class="experience-company"><span>Company: </span>TSG</div>
+  <div class="experience-summary"><span>Summary: </span>Senior Js Developer (half time Team Leader)</div>
+  <div class="experience-trch-summary"><span>Tech: </span>Angular 2 ( 7 ) , NGRX , RXJS , PUCH-DB ,COUCH-DB ,  shared worker , service worker , webRTC , indexDB , JIRA</div>
+  <div class="experience-description">Create a CRM system for crime events like MOKED 100 </div>
+  <div class="experience-dates">september 2018  - july 2019</div>
+
+  <div class="experience-company"><span>Company: </span>JOHN BRICE</div>
+  <div class="experience-summary"><span>Summary: </span>lecturer at John brice</div>
+  <div class="experience-trch-summary"><span>Tech: </span>Full stack ,PHP ,NODE.JS angular 2</div>
+  <div class="experience-dates">2017 - Today</div>
+
+  <div class="experience-company"><span>Company: </span>Rav-Tech</div>
+  <div class="experience-summary"><span>Summary: </span>lecturer at Rav-Tech</div>
+  <div class="experience-trch-summary"><span>Tech: </span>Full stack NODE.JS angular 2</div>
+  <div class="experience-dates">2017 - Today</div>
+
+
+  <div class="experience-company"><span>Company: </span>DeskForce </div>
+  <div class="experience-summary"><span>Summary: </span>Full Stack Developer </div>
+  <div class="experience-tech-summary"><span>Tech: </span>PHP & MYsql &  JS . LINUX , BASH ,  git , GITLAB ,  AWS cloud</div>
+  <div class="experience-description">create Integration with Asterisk VIOP  server , refactor VICI-DIAL</div>
+  <div class="experience-description">create Integration with Speach To Text and build the UI </div>
+  <div class="experience-description">create SPA in for Call-Centers, create reports features with Data Visualization E2E</div>
+  <div class="experience-description">Create chrome extension that active as webRTC Phone</div>
+  <div class="experience-description">Building Backup systems for call center on top of AWS cloud</div>
+  <div class="experience-dates">2016 - 2017</div>
+  </div>
+
+  <div class="experience-company"><span>Company: </span>SignTouch </div>
+  <div class="experience-summary"><span>Summary: </span>full stack web Developer php & javascript  </div>
+  <div class="experience-tech-summary"><span>Tech: </span>full stack web Developer php & javascript  </div>
+  <div class="experience-description">SAAS APP - server side - responsible on the php code ( object-oriented). design the DB </div>
+  <div class="experience-description">Image Manipulation , automation of  PDF  creating, client-side - javascript & jquery  </div>
+  <div class="experience-dates">2015</div>
+
+  <div class="experience-company"><span>Company: </span>Shiluv Millward Brown Israel </div>
+  <div class="experience-summary"><span>Summary: </span>developer</div>
+  <div class="experience-tech-summary"><span>Tech: </span>dot.NET</div>
+  <div class="experience-data">dot.net Apps for inner use using VBA</div>
+  <div class="experience-dates">2011 -2014</div>
+
+  <div class="experience-company"><span>Company: </span>israeli IRS - SHA'AM</div>
+  <div class="experience-summary"><span>Summary: </span>Student developer job</div>
+  <div class="experience-tech-summary"><span>Tech: </span>dot.NET</div>
+  <div class="experience-description">dot.net Apps for inner use using VBA</div>
+  <div class="experience-dates">2009 - 2010</div>
+
+</section>
+
+</body>
+
+</html>
