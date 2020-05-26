@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yehonatan yehezkel CV</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 21px;
+    }
+
+    .general {
+      display: flex;
+      justify-content: center;
+      /* flex-direction: column; */
+      padding-block-start: 6rem;
+      padding-block-end: 6rem;
+      /* padding-inline-start: 8rem;
+      padding-inline-end: 8rem; */
+
+    }
+
+    .personal-main {
+      display: flex;
+      justify-content: center;
+      padding-block-start: 6rem;
+      padding-block-end: 6rem;
+      flex-direction: column;
+    }
+
+    .skills-main {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+      letter-spacing: 0.03rem;
+      max-width: 880px;
+
+
+    }
+
+    .skill-container {
+      margin-block-start: 1.5rem;
+      display: flex;
+      flex-direction: row;
+
+      /* border: 1px black solid; */
+
+    }
+
+    .skill-title,
+    .experience-title {
+      flex: 1;
+      /* border: 1px red solid; */
+      flex-wrap: nowrap;
+      align-self: flex-start;
+      font-weight: 600;
+      font-style: italic;
+      /* margin-block-end: 0.3rem;
+      margin-block-start: 0.3rem; */
+
+    }
+
+    .skill-description,
+    .experience-data {
+      flex: 3;
+      /* border: 1px green solid; */
+      line-height: 2rem;
+
+    }
+
+    /* 
+    .personal {
+      padding-inline-start: 1rem;
+      padding-inline-end: 0.5rem;
+      background-color: rgb(65, 106, 196);
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 1rem;
+      min-width: 15rem;
+      max-width: 6rem;
+      margin-inline-start: 10rem;
+      margin-block-start: 6rem;
+
+    }*/
+
+
+    .experience-main {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+
+      letter-spacing: 0.03rem;
+
+
+
+    }
+
+    .experience-data {
+
+      max-width: 880px;
+
+
+    }
+
+    .experience-header {
+      text-align: center;
+    }
+
+    .experience-container {
+      /* border: 1px solid red; */
+      margin-block-start: 2rem;
+    }
+
+    .experience-company,
+    .experience-summary,
+    .experience-tech-summary,
+    .experience-description,
+    .experience-dates {
+      display: flex;
+      /* border: 1px solid black; */
+    }
+
+
+    .personal {
+      display: flex;
+      justify-content: flex-start;
+      padding-inline-start: 12rem;
+      font-size: 1rem;
+      font-family: monospace;
+    }
+
+    @media (max-width: 600px) {
+      .general {
+
+        padding-block-start: 2rem;
+        padding-block-end: 2rem;
+        padding-inline-start: 0rem;
+        padding-inline-end: 0rem;
+        flex-direction: column;
+
+      }
+
+      .skills-main {
+        padding-inline-start: 0.1rem;
+        padding-inline-end: 0.1rem;
+        padding-block-start: 0.3rem;
+
+      }
+
+      .skill-container {
+        flex-direction: column;
+      }
+
+      .personal {
+        min-width: 15rem;
+        margin-inline-start: 0rem;
+        margin-block-start: 0rem;
+        padding-inline-start: 1rem;
+        max-width: none;
+
+      }
+
+      .experience-company,
+      .experience-summary,
+      .experience-tech-summary,
+      .experience-description,
+      .experience-dates {
+        display: block;
+        /* border: 1px solid black; */
+      }
+    }
+
+    .cv-title {
+      text-align: center;
+      margin-block-start: 3rem;
+    }
+
+
+    .personal-title,
+    .personal-additional-details {
+      font-weight: 600;
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-block-start: 2rem;
+    }
+
+    .personal-additional-details {}
+
+    .personal-data {
+      margin-block-start: 1rem;
+    }
+
+    .personal-data>span {
+      font-weight: 600;
+      font-style: italic;
+    }
+
+
+    .personal-contact,
+    .personal-additional {}
+  </style>
+
+</head>
+
+<body dir="rtl">
+
+  <h2 class="cv-title">יהונתן יחזקאל</h2>
+  <section class="personal">
+    <section class="personal-contact">
+      <div class="personal-title">פרטים אישיים</div>
+      <div class="personal-data"> <span> טלפון:</span> 055-6615410</div>
+      <div class="personal-data"><span> מייל:</span> yoni333@gmail.com</div>
+      <div class="personal-data"><span> כתובת:</span> ירושלים</div>
+      <div class="personal-data"><span>שירות צבאי:</span> תותחן</div>
+      <div class="personal-data"><span>לימודים:</span> 170 שעות בבניית תוכנה וניתוח מערכות מידע כחלק מלמודי חשבונאות</div>
+      <div class="personal-data"><span>סרטוני תוכנה שיצרתי:</span> https://www.youtube.com/channel/UChW3G_BAbP4zln_enWUPRkw/playlists</div>
+      <div class="personal-data"> <span> גיטהאב:</span> https://github.com/yoni333?tab=repositories</div>
+      <div class="personal-data"> <span> לינקדין:</span> https://www.linkedin.com/in/yehonatan-yehezkel-0a498253/</div>
+
+      <div class="personal-title personal-additional-details">שפות</div>
+      <div class="personal-data"> <span> עברית:</span> שפת אם</div>
+      <div class="personal-data"> <span> אנגלית:</span> גבוהה</div>
+    </section>
+
+  </section>
+  <!-- <div class="personal-main">
+    <section class="personal">
+
+      <section>
+        <div class="personal-title">Personal Details</div>
+        <div class="personal-data"> <span> Name:</span> Yehonatan Yehezkel</div>
+        <div class="personal-data"> <span> Phone:</span> 055-6615410</div>
+        <div class="personal-data"><span> Mail:</span> yoni333@gmail.com</div>
+        <div class="personal-data"><span> Address:</span> Jerusalem</div>
+        <div class="personal-data"><span> Army Service:</span> gunner</div>
+      </section>
+      <section>
+        <div class="personal-title personal-additional-details">Additional Details</div>
+        <div class="personal-data"><span> GIthub:</span> <a href=" https://github.com/yoni333?tab=repositories ">My
+            repositories</a></div>
+        <div class="personal-data"><span> linkedin:</span><a
+            href=" https://www.linkedin.com/in/yehonatan-yehezkel-0a498253/">My Profile</a> </div>
+        <div class="personal-data"><span> youTube:</span> <a
+            href=" https://www.youtube.com/channel/UChW3G_BAbP4zln_enWUPRkw/playlists">Programming Video that i created
+          </a></div>
+      </section>
+      <section>
+        <div class="personal-title personal-additional-details">Languages</div>
+        <div class="personal-data"> <span> Hebrew:</span> Native language</div>
+        <div class="personal-data"> <span> English:</span> Intermediate</div>
+      </section>
+    </section>
+  </div> -->
+  <section class="general">
+
+
+    <section class="skills-main">
+
+      <div class="skill-container">
+        <div class="skill-title">באופן כללי</div>
+        <div class="skill-description">התחום שלי הוא בניית מערכת ווב מקצה לקצה תוך מתן דגש לתכנון וארכיטקטורה בעיקר עם
+          Angular (Typescript ,NGRX ), React & NodeJS </div>
+        <div></div>
+      </div>
+
+      <div class="skill-container">
+        <div class="skill-title">צד לקוח: </div>
+        <div class="skill-description">בשלוש וחצי האחרונות עבדתי עם ANGULAR & REACT תוך שימוש בתבניות חנות שונות -NGRX ,
+          REDUX , SAGA עבור ניהול סטייט
+          אני מכיר היטב את התכונות החדשות של ES06 ומעלה
+        </div>
+
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">CSS frameworks:</div>
+        <div class="skill-description"> Angular Material , MAterial UI , PrimeNG , Bootstrap
+
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">צד שרת:</div>
+        <div class="skill-description">עבדתי עם NODEJS & PHP בעיקר בתור ממשקי REST API תוך כדי שימוש בפריימורקים בסגנון
+          EXPRESS וכלים כגון POSTMAN , SWAGGER . כמו כן עשיתי המון סקריפטים בשפת BASH עבור עיבוד תמונה ואחסון תמונות
+          בצורה של MICROSERVICES. לפני שנת 2017 עבדתי רק עם PHP & APACHE SERVER
+        </div>
+
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">Database Experience: </div>
+        <div class="skill-description"> Mysql (MariaDB version) , Mongo ( with mongoose) , FireStore
+          - include DB modeling
+        </div>
+      </div>
+
+      <div class="skill-container">
+        <div class="skill-title">ארכיטקטורה:</div>
+        <div class="skill-description"> אני מכיר היטב את עקרונות ה CLEAN-CODE , יש לי ניסיון רב עם DOMAIN DRIVE DESIGN
+          בצד שרת ובצד לקוח
+          <div>
+            ויש לי ניסיון גם בתכנות מונחה עצמים וגם בתכנות פונקציונלי
+          </div>
+          <div>
+            בימים אלו אני מתרגם ספר מאמגלית על תכנות פונקציונלי </div>
+
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+
+  </section>
+  <section class="experience-main">
+    <div class="experience-content">
+      <hr>
+      <h3 class="experience-header">ניסיון </h3>
+    </div>
+  </section>
+
+
+
+  </section>
+
+</body>
+
+<script>
+
+
+</script>
+
+<script>
+  const experienceData = [
+
+    {
+      company: "PYCH",
+      summary: `Fullstack developer`,
+      techSummary: `Angular 2 ( 8 ) , NGRX , RXJS , FireStore-DB , Google Cloud Function, Google Auth`,
+      description: [`יצירת מערכת CRM עבור סוכנות נסיעות שמנהלת את ההזמנות והתשלומים `, 'כולל אפליקציה לסכונים ולנהגים'],
+      // description: [`Create a CRM for Traveling Agency , that handle their invitation & payments `, 'include customer app and agent app'],
+      dates: `פברואר 2020 - יולי 2019`,
+    },
+    {
+      company: "TSG",
+      summary: `מפתח בכיר בצוות - ראש צוות`,
+      techSummary: `Angular 2 ( 7 ) , NGRX , RXJS , PUCH-DB ,COUCH-DB ,
+        shared
+        worker , service worker , webRTC , indexDB , JIRA`,
+      description: [`בניית מערכת CRM עבור מוקד טלפוני של משטרה ממדינה זרה `],
+      dates: `ספטמבר 2018 - יולי 2019`,
+    },
+    {
+      company: "JOHN BRICE",
+      summary: `מרצה במכללת ג'ון ברייס`,
+      techSummary: `Full stack ,PHP ,NODE.JS angular 2`,
+      // description:[`Create a CRM system for crime events like MOKED 100 `],
+      dates: `ספטמבר 2017 - היום`,
+    },
+    {
+      company: "Rav-Tech",
+      summary: `מרצה במכללת רב-טק`,
+      techSummary: `Full stack NODE.JS angular 2 ,React`,
+      // description:[`Create a CRM system for crime events like MOKED 100 `],
+      dates: `ספטמבר 2017 - היום`,
+    },
+    {
+      company: "DeskForce",
+      summary: `Fullstack Developer`,
+      techSummary: `PHP & MYsql & JS . LINUX , BASH , git , GITLAB , AWS cloud `,
+      description: [`יצירת אינטגרציה עם שרת ASTERISK , רפקטורינג של מערכת VICI-DIAL`,
+        `בניית מערכת ניטור תוכן של שיחות בעזרת אינטגרציה עם שרתי SPEECH TO TEXT`,
+        `יצירת אפליקציית ווב SPA עבור מוקדי טלפנים ויצירתת שירות דוחו"ת ומעקב לאחמשי"ם`,
+        `יצירת טלפון בעזרת WEBRTC על גבי תוסף כרום`,
+        `יצירת מערכת גיבוי שיחות  אוטומטית על גבי תשתית של AWS`,
+      ],
+
+      dates: `2016-2017`,
+    },
+    {
+      company: "SignTouch",
+      summary: `Fullstack Developer`,
+      techSummary: `PHP & Jquery `,
+      description: [`צד שרת  - אחריות מקצה לקצה .`,
+        `תכנון מסד הנתונים`,
+        `עיבוד תמונה , יצירת PDF צד לקוח JQUERY`,
+
+      ],
+      dates: `2015`,
+    },
+    {
+      company: "Shiluv Millward Brown ",
+      summary: `dot.NET developer`,
+      techSummary: `dot.NET `,
+      description: [`יצירת אפליקציות פנימיות על גבי VBA`,
+
+      ],
+      dates: `2011 - 2014`,
+    },
+    {
+      company: "israeli IRS - SHA'AM",
+      summary: `student dot.NET developer`,
+      techSummary: `dot.NET `,
+      description: [`יצירת אפליקציות פנימיות על גבי VBA`,
+
+      ],
+      dates: `2011 - 2014`,
+    },
+  ]
+
+
+
+</script>
+<script>
+  function createContainer(className) {
+    const elm = document.createElement("div");
+    elm.classList.add(className);
+    return elm;
+  }
+
+  function createRow(myTitle, className, myData) {
+
+
+    const title = createContainer("experience-title")
+    const text = document.createTextNode(myTitle);
+    title.appendChild(text);
+    const data = createContainer("experience-data");
+    const dataText = document.createTextNode(myData);
+    data.appendChild(dataText)
+
+    const elm = createContainer(className);
+    elm.appendChild(title);
+    elm.appendChild(data);
+    return elm;
+
+  }
+  const content = document.getElementsByClassName("experience-content")[0];
+  const structure = [
+    { title: "תקופה:", class: "experience-dates", prop: "dates" },
+    { title: 'חברה:', class: "experience-company", prop: "company" },
+    { title: "תקציר:", class: "experience-summary", prop: "summary" },
+    { title: "טכנולוגיות:", class: "experience-tech-summary", prop: "techSummary" },
+    { title: "תיאור", class: "experience-description", prop: "description" },
+  ];
+
+  experienceData.forEach(data => {
+    const container = createContainer("experience-container");
+    structure.forEach(row => {
+      if (data[row.prop] === undefined) {    return  }
+      container.appendChild(createRow(row.title, row.class, data[row.prop]));
+    })
+    content.appendChild(container)
+  })
+
+</script>
+
+</html>

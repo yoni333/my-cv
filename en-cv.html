@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yehonatan yehezkel CV</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 21px;
+    }
+
+    .general {
+      display: flex;
+      justify-content: center;
+      /* flex-direction: column; */
+      padding-block-start: 6rem;
+      padding-block-end: 6rem;
+      /* padding-inline-start: 8rem;
+      padding-inline-end: 8rem; */
+
+    }
+
+    .personal-main {
+      display: flex;
+      justify-content: center;
+      padding-block-start: 6rem;
+      padding-block-end: 6rem;
+      flex-direction: column;
+    }
+
+    .skills-main {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+      letter-spacing: 0.03rem;
+      max-width: 880px;
+
+
+    }
+
+    .skill-container {
+      margin-block-start: 1.5rem;
+      display: flex;
+      flex-direction: row;
+
+      /* border: 1px black solid; */
+
+    }
+
+    .skill-title,
+    .experience-title {
+      flex: 1;
+      /* border: 1px red solid; */
+      flex-wrap: nowrap;
+      align-self: flex-start;
+      font-weight: 600;
+      font-style: italic;
+      /* margin-block-end: 0.3rem;
+      margin-block-start: 0.3rem; */
+
+    }
+
+    .skill-description,
+    .experience-data {
+      flex: 3;
+      /* border: 1px green solid; */
+      line-height: 2rem;
+
+    }
+
+    /* 
+    .personal {
+      padding-inline-start: 1rem;
+      padding-inline-end: 0.5rem;
+      background-color: rgb(65, 106, 196);
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      font-size: 1rem;
+      min-width: 15rem;
+      max-width: 6rem;
+      margin-inline-start: 10rem;
+      margin-block-start: 6rem;
+
+    }*/
+
+
+    .experience-main {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+
+      letter-spacing: 0.03rem;
+
+
+
+    }
+
+    .experience-data {
+
+      max-width: 880px;
+
+
+    }
+
+    .experience-header {
+      text-align: center;
+    }
+
+    .experience-container {
+      /* border: 1px solid red; */
+      margin-block-start: 2rem;
+    }
+
+    .experience-company,
+    .experience-summary,
+    .experience-tech-summary,
+    .experience-description,
+    .experience-dates {
+      display: flex;
+      /* border: 1px solid black; */
+    }
+
+
+    .personal {
+      display: flex;
+      justify-content: flex-start;
+      padding-inline-start: 12rem;
+      font-size: 1rem;
+      font-family: monospace;
+    }
+
+    @media (max-width: 600px) {
+      .general {
+
+        padding-block-start: 2rem;
+        padding-block-end: 2rem;
+        padding-inline-start: 0rem;
+        padding-inline-end: 0rem;
+        flex-direction: column;
+
+      }
+
+      .skills-main {
+        padding-inline-start: 0.1rem;
+        padding-inline-end: 0.1rem;
+        padding-block-start: 0.3rem;
+
+      }
+
+      .skill-container {
+        flex-direction: column;
+      }
+
+      .personal {
+        min-width: 15rem;
+        margin-inline-start: 0rem;
+        margin-block-start: 0rem;
+        padding-inline-start: 1rem;
+        max-width: none;
+
+      }
+
+      .experience-company,
+    .experience-summary,
+    .experience-tech-summary,
+    .experience-description,
+    .experience-dates {
+      display: block;
+      /* border: 1px solid black; */
+    }
+    }
+
+    .cv-title {
+      text-align: center;
+      margin-block-start: 7rem;
+
+    }
+
+
+    .personal-title,
+    .personal-additional-details {
+      font-weight: 600;
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-block-start: 2rem;
+    }
+
+    .personal-additional-details {}
+
+    .personal-data {
+      margin-block-start: 1rem;
+    }
+
+    .personal-data>span {
+      font-weight: 600;
+      font-style: italic;
+    }
+
+
+    .personal-contact,
+    .personal-additional {}
+  </style>
+
+</head>
+
+<body>
+
+  <h2 class="cv-title">Yehonatan Yehezkel CV</h2>
+  <section class="personal">
+    <section class="personal-contact">
+      <div class="personal-title">Personal Details</div>
+      <div class="personal-data"> <span> Phone:</span> 055-6615410</div>
+      <div class="personal-data"><span> Mail:</span> yoni333@gmail.com</div>
+      <div class="personal-data"><span> Address:</span> Jerusalem</div>
+      <div class="personal-data"><span> Army Service:</span> gunner</div>
+      <div class="personal-data"><span>YouTube Channel:</span> https://www.youtube.com/channel/UChW3G_BAbP4zln_enWUPRkw/playlists</div>
+      <div class="personal-data"> <span> github:</span> https://github.com/yoni333?tab=repositories</div>
+      <div class="personal-data"> <span> linkedin:</span> https://www.linkedin.com/in/yehonatan-yehezkel-0a498253/</div>
+
+      <div class="personal-title personal-additional-details">Languages</div>
+      <div class="personal-data"> <span> Hebrew:</span> Native language</div>
+      <div class="personal-data"> <span> English:</span> Intermediate</div>
+    </section>
+
+  </section>
+  
+  <section class="general">
+
+
+    <section class="skills-main">
+
+      <div class="skill-container">
+        <div class="skill-title">In General</div>
+        <div class="skill-description"> I know to create complex systems end to end as <strong> Full-stack Web Developer
+          </strong> as single
+          developer and in within a team.
+          with different Clint Side FrameWork specially with nodeJS & Angular & React </div>
+      </div>
+
+      <div class="skill-container">
+        <div class="skill-title">FRONT-END: </div>
+        <div class="skill-description">In the last 3.5 years i worked mots of the time with <strong>
+            Angular 2 + (and TypeScript) , React </strong> (small experience with VUE , Polymer)
+          I am well familiar with Store Pattern and State Management with NGRX and REDUX , RxJs ,ES06 new features
+
+
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">CSS frameworks:</div>
+        <div class="skill-description"> Angular Material , MAterial UI , PrimeNG , Bootstrap
+
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">Server side:</div>
+        <div class="skill-description"> <strong> I Worked with Node.js and PHP in production mode.
+            I have good experience with creating REST API (with Express) </strong>
+          using tools like Swagger & Postman ,
+          and in server side process like : workings with files , connect and use AWS services , Image and PDF
+          Manipulation Using LINUX & BASH
+          before 2017 my i worked with PHP and APACHE SERVER
+
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-title">Database Experience: </div>
+        <div class="skill-description"> Mysql (MariaDB version) , Mongo ( with mongoose) , FireStore
+          - include DB modeling
+        </div>
+      </div>
+
+      <div class="skill-container">
+        <div class="skill-title">Architecture:</div>
+        <div class="skill-description"> well Familiar with Clean Code & Domain Driven Design (backend &
+          FED) , also With MVC , MVP.
+          <div>
+            i love to create correct code with OOP or functional programing .
+
+          </div>
+          <div>
+            In this days i translate to hebrew a book about Functional programing in javaScript and Learning Docker
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+  </section>
+  <section class="experience-main">
+    <div class="experience-content">
+      <hr>
+      <h3 class="experience-header">Experience</h3>
+    </div>
+  </section>
+
+
+
+  </section>
+
+</body>
+
+<script>
+
+
+</script>
+
+<script>
+  const experienceData = [
+
+    {
+      company: "PYCH",
+      summary: `Fullstack developer for private customer`,
+      techSummary: `Angular 2 ( 8 ) , NGRX , RXJS , FireStore-DB , Google Cloud Function, Google Auth`,
+      description: [`Create a CRM for Traveling Agency , that handle their invitation & payments `, 'include customer app and agent app'],
+      dates: `september 2018 - july 2019`,
+    },
+    {
+      company: "TSG",
+      summary: `Senior Js Developer (half time Team Leader)`,
+      techSummary: `Angular 2 ( 7 ) , NGRX , RXJS , PUCH-DB ,COUCH-DB ,
+        shared
+        worker , service worker , webRTC , indexDB , JIRA`,
+      description: [`Create a CRM system for crime events like MOKED 100 `],
+      dates: `september 2018 - july 2019`,
+    },
+    {
+      company: "JOHN BRICE",
+      summary: `lecturer at John brice`,
+      techSummary: `Full stack ,PHP ,NODE.JS angular 2`,
+      // description:[`Create a CRM system for crime events like MOKED 100 `],
+      dates: `september 2017 - Today`,
+    },
+    {
+      company: "Rav-Tech",
+      summary: `lecturer at Rav-Tech`,
+      techSummary: `Full stack NODE.JS angular 2 ,React`,
+      // description:[`Create a CRM system for crime events like MOKED 100 `],
+      dates: `september 2017 - Today`,
+    },
+    {
+      company: "DeskForce",
+      summary: `Fullstack Developer`,
+      techSummary: `PHP & MYsql & JS . LINUX , BASH , git , GITLAB , AWS cloud `,
+      description: [`create Integration with Asterisk VIOP server , refactor VICI-DIAL`,
+        `create Integration with Speach To Text and build the UI`,
+        `create SPA in for Call-Centers, create reports features with Data
+          Visualization E2E`,
+        `Create chrome extension that active as webRTC Phone`,
+        `Building Backup systems for call center on top of AWS cloud`,
+      ],
+      dates: `2016-2017`,
+    },
+    {
+      company: "SignTouch",
+      summary: `Fullstack Developer`,
+      techSummary: `PHP & Jquery `,
+      description: [`SAAS APP - server side - responsible on the php code ( object-oriented).`,
+        `design the DB`,
+        `Image Manipulation , automation of PDF creating, client-side - javascript &
+        jquery`,
+
+      ],
+      dates: `2015`,
+    },
+    {
+      company: "Shiluv Millward Brown ",
+      summary: `dot.NET developer`,
+      techSummary: `dot.NET `,
+      description: [`dot.net Apps for inner use using VBA`,
+
+      ],
+      dates: `2011 - 2014`,
+    },
+    {
+      company: "israeli IRS - SHA'AM",
+      summary: `student dot.NET developer`,
+      techSummary: `dot.NET `,
+      description: [`dot.net Apps for inner use using VBA`,
+
+      ],
+      dates: `2011 - 2014`,
+    },
+  ]
+
+
+
+</script>
+<script>
+  function createContainer(className) {
+    const elm = document.createElement("div");
+    elm.classList.add(className);
+    return elm;
+  }
+
+  function createRow(myTitle, className, myData) {
+
+    const title = createContainer("experience-title")
+    const text = document.createTextNode(myTitle);
+    title.appendChild(text);
+    const data = createContainer("experience-data");
+    const dataText = document.createTextNode(myData);
+    data.appendChild(dataText)
+
+    const elm = createContainer(className);
+    elm.appendChild(title);
+    elm.appendChild(data);
+    return elm;
+
+  }
+  const content = document.getElementsByClassName("experience-content")[0];
+  const structure = [
+    { title: "Dates:", class: "experience-dates", prop: "dates" },
+    { title: 'Company:', class: "experience-company", prop: "company" },
+    { title: "Summary:", class: "experience-summary", prop: "summary" },
+    { title: "Tech:", class: "experience-tech-summary", prop: "techSummary" },
+    { title: "Description:", class: "experience-description", prop: "description" },
+  ];
+
+  experienceData.forEach(data => {
+    const container = createContainer("experience-container");
+    structure.forEach(row => {
+      if (data[row.prop] === undefined) {    return  }
+
+      container.appendChild(createRow(row.title, row.class, data[row.prop]));
+    })
+    content.appendChild(container)
+  })
+
+</script>
+
+</html>
